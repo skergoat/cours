@@ -111,10 +111,11 @@ presentation.name = 'Stephane';
 presentation.hello(); // renvoie 'hello Stephane'
 presentation.nom(); // renvoie 'my name is Stephane'
 
-/******************
- * E. les classes  
- * ***************/
-
+/*********************************
+ * 2. Les classes 
+ * 
+ * Exemples du cours   
+ * *******************************/
 class Personnage {
     constructor(name, life) {
         this.name = name;
