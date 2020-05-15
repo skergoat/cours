@@ -1,4 +1,4 @@
-
+// exercie 1 
 class Personnage {
 
     constructor(name, life, experience) {
