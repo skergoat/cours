@@ -1,0 +1,809 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); /* Passion One */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap'); /* Lato */
+
+/* Prérequis */
+
+body {
+	
+	margin: 0;
+	padding: 0;
+	background-color: #ffffff;
+	font-family: 'Lato';
+}
+
+.container {
+	
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
+/* HEADER */
+
+header {
+	max-height: 95px;
+	border-bottom: solid 4px rgba(219,132,6,1.00);
+}
+
+.titre {
+	
+	font-family: 'Passion One';
+	font-size: 45px;
+	letter-spacing: 2px;
+	
+}
+
+.flex {
+	
+	display: flex;
+
+}
+
+.logo {
+	flex: 1;
+	
+}
+
+
+nav {
+	
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+header nav ul {
+	
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
+	
+}
+
+header nav ul li {
+	
+	list-style: none;
+	text-transform: uppercase;
+	
+}
+
+header nav ul li a {
+	
+	font-weight: 700;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+	transition: 0.5s;
+	border-bottom: solid 2px transparent;
+	padding-bottom: 2px;
+}
+
+header nav ul li a:hover {
+	
+	
+	border-color: rgba(219,132,6,1.00);
+}
+
+
+/* SLOGAN */
+
+
+
+
+
+#image {
+	/* width: 100%; */
+	background-image: url(../img/image1.jpg);
+	min-height: 800px;
+	/***/
+	background-size:cover; /* force l'image de prendre toute la largeur de la div */
+	/***/
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+
+}
+
+#image h2 {
+	
+	font-weight: 800;
+	font-size: 70px;
+	letter-spacing: 0.1em;
+	word-spacing: 0.3em;
+	color: #ffffff;
+	border-bottom: 2px solid #ffffff;
+	text-shadow: 2px 2px 3px #ffffff;
+}
+
+.infossurjb1 {
+	
+	width: 100%;
+	font-weight: 500;
+	font-size: 32px;
+	letter-spacing: 0.2em;
+	word-spacing: 0.3em;
+	color: black;
+	text-align: justify;
+	background: rgba(244,239,239,0.6);
+	padding: 10px;
+	margin-bottom: 100px;
+	
+}
+
+.infossurjb2 {
+	
+	width: 70%;
+	font-weight: 500;
+	font-size: 30px;
+	letter-spacing: 0.1em;
+	word-spacing: 0.3em;
+	color: black;
+	text-align: justify;
+	background: rgba(244,239,239,0.80);
+	padding: 10px;
+	
+	
+}
+
+
+/* BANNIERE */
+
+.baniere { 
+	
+	width: 100%;
+	min-height: 400px;
+	background-color: rgba(8, 59, 91, 1);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	line-height: 0.8em;
+	
+	/*box-sizing: border-box;
+	border: solid 4px rgba(219,132,6,1.00);*/
+	
+	
+}
+
+#deco {
+	
+	
+	display: block;
+	width: 50%;
+	border-top: solid 5px rgba(219,132,6,1.00);
+	opacity: 0;
+	transition: 0.3s ease-in;
+}
+
+#deco::before {
+	
+	content: '';
+	border-bottom: 5px solid rgba(156,95,6,1.00);
+	width: 100%;
+	display: block;  /* si tu dispplay pas block, ca ne s'affiche pas */
+	transform: translate(120px, 220px);
+
+}
+
+
+
+.KRS {
+	
+	font-weight: 500;
+	font-size: 70px;
+	letter-spacing: 0.1em;
+	word-spacing: 0.3em;
+	font-family: 'Passion One';
+	margin-left: 10px;
+}
+
+.baniere h2 {
+	
+	font-size: 50px;
+}
+
+.baniere p {
+	font-weight: 900;
+	font-size: 35px;
+}
+
+
+.KRSp {
+	
+	line-height: 50px;
+}
+
+/* SERVICES */
+
+#section-important {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+.service {
+	
+	width: 100%;
+	min-height: 460px;
+	display: flex;
+	margin: 15px;
+	border-bottom: 5px solid rgba(219,132,6,1.00);
+}
+.image {
+	width: 50%;
+
+}
+
+
+
+.presentation {
+	
+	width: 50%;
+	
+}
+
+.presentation h3, .invisible section h3 {
+	
+	font-size: 32px;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.presentation p, .invisible section p{
+	
+	font-size: 22px;
+
+}
+
+.flexcenter {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	
+}
+
+#bouton1, #bouton2, #bouton3 {
+	
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 5px 20px;
+	user-select: none;
+	transition: 0.5s ease-in-out;
+	
+}
+
+#bouton1:hover, #bouton2:hover, #bouton3:hover {
+	
+	
+	padding: 5px 40px;
+	background-color: rgba(8, 59, 91, 0.5);
+	cursor: pointer;
+	
+}
+
+/* CSS pour JAVASCRIPT */
+
+.invisible {
+	
+	
+	width: 100%;
+	min-height: 500px;
+	/*background-color: black;*/
+	border-bottom: 5px solid rgba(219,132,6,1.00);
+
+}
+
+#block1 {
+	
+	display: none;
+
+}
+
+/* CSS intérieur du block visible */
+
+.image-presentation {
+	
+	padding: 10px;
+
+}
+
+#imageagrandir {
+	
+	width: 100%;
+	
+	height: 400px;
+	background: url("../img/IMG_20170908_110055.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 10px;
+	display: block;
+	/****/
+	cursor:pointer;
+}
+
+#imageagrandir2 {
+	
+	width: 100%;
+	
+	height: 400px;
+	background: url("../img/IMG_20170908_110306.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 10px;
+	display: block;
+	/****/
+	cursor:pointer;
+}
+
+
+/* SECTION DEVIS GRATUIT */
+
+#section-devis__box {
+	
+	width: 60%;
+	height: 200px;
+	background-color: rgba(156,95,6,1.00);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	
+}
+
+
+
+.devis:hover {
+	
+	animation: animation 2s;
+	animation-direction: alternate;
+}
+
+@keyframes animation {
+	
+	0% {
+		
+		transform: rotate(-3deg);
+		
+	}
+	
+	50% {
+		
+		transform: rotate(-20deg);
+		color: rgba(8, 59, 91, 1);
+	}
+	
+	100% {
+		
+		transform: translateX(10deg);
+		
+	}
+	
+	
+}
+
+
+#section-devis {
+	
+	margin-top: 60px;
+	
+}
+
+.devis {
+	text-transform: uppercase;
+	font-family: 'Passion One';
+	font-size: 50px;
+	transform: rotate(-3deg);
+	color: white;
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	padding: 15px;
+}
+
+
+/* DEVIS */
+
+#sectionDevis {
+	
+
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	
+	display: none;
+}
+
+
+.formulaire {
+	
+	width: 60%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-image: linear-gradient(to right, #fff, #db8406);
+	
+}
+
+#nom, #email, #telephone, #localisation {
+	
+	width: 25%;
+	height: 15px;
+	margin: 15px;
+}
+
+#description {
+	
+	width: 50%;
+	height: 150px;
+	margin: 15px;
+}
+
+.formDiv {
+	
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+#btnEnvoyer {
+	
+	width: 12%;
+	height: 30px;
+	background-color: rgba(219,132,6,1.00);
+	color: white;
+	font-family: 'Passion One';
+	letter-spacing: 2px;
+	font-size: 20px;
+	transition: 2s ease-in-out;
+	
+}
+
+/* MAPS */
+
+.map {
+	
+	margin-top: 40px;
+}
+
+
+.map_flex {
+	
+	display: flex;
+	flex-direction: row;
+}
+
+.ggmaps {
+	
+	margin: 10px;
+}
+
+.infomap {
+	
+	width: 35%;
+	margin: 10px;
+}
+
+
+/* FOOTER */ 
+
+footer {
+	
+	margin-top: 40px;
+	padding-top: 40px; 
+	background-color: rgba(8, 59, 91, 1);
+	width: 100%;
+	min-height: 600px;
+}
+
+footer h4 {
+	
+	color: white;
+	font-size: 20px;
+	line-height: 35px;
+	text-align: center;
+	font-weight: 900;
+	
+	
+}
+
+footer p {
+	
+	font-size: 18px;
+	text-align: center;
+	line-height: 8px;
+	font-weight: 700;
+	
+}
+
+
+#contactMe {
+	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	
+}
+
+
+.fab {
+	
+	font-size: 50px;
+	color: black; 
+	margin-right: 3px;
+	margin-left: 3px;
+	transition: 0.5s;
+	margin-bottom: 20px;
+}
+
+.fab:hover {
+	
+	font-size: 60px;
+	color: rgba(219,132,6,1.00);
+}
+
+
+.info {
+	margin-bottom: 20px;
+	border-top: 2px solid white;
+}
+
+.flexsecond {
+	
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.scroll {
+	
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+.titrelogo {
+	text-decoration: none;
+	color: black;
+}
+
+.boiteMail {
+	text-decoration: none;
+	color: white;
+}
+
+
+/* FOOTER IMAGE ET INFOS PERSO */
+
+
+.photoProfil {
+	
+	width: 13%;
+	
+	height: 250px;
+	background: url("../img/photoprofil.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 15px
+}
+
+.curiculum {
+	
+	margin-top: 70px;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+
+}
+
+.infoJB {
+	
+	margin-left: 20px;
+	width: 40%;
+	border-left: 2px solid white;
+	padding: 15px;
+}
+
+.infoJBp {
+	
+	text-align: left;
+	line-height: 20px;
+}
+
+.margin
+{
+	
+	padding-top: 20px;
+}
+
+.middle {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+
+@media only screen and (max-width: 1420px) {
+	
+	
+
+	
+	
+	.service {
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	
+	.imagepresentation {
+		
+		width: 100%;
+	
+		
+	}
+	
+	.image {
+		
+		width: 80%;
+	}
+	
+	.infoJB {
+		
+		width: 60%;
+	}
+	
+	.map_flex {
+		
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.infomap {
+		
+		width: 50%;
+	}
+	
+	@media only screen and (max-width: 1050px) {
+		
+		#header__nav__ul {
+			
+			display: none;
+		}
+		
+		
+		
+	
+		.infossurjb1 {
+	
+	width: 100%;
+	font-size: 28px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	margin-bottom: 10px;
+	
+}
+		.infossurjb2 {
+			
+	width: 100%;
+	letter-spacing: 0.1em;
+	font-size: 26px;
+	text-align: center;
+	margin-top: 10px;
+			
+		}
+		
+		
+		
+		
+		.KRSp {
+			
+			text-align: center;
+		}
+		
+		#deco::before {
+	
+
+		transform: translate(0px, 280px);
+
+}
+		/* SERVICES*/
+		
+		
+		.imagepresentation {
+			
+			width: 100%;
+			height: 250px;
+			
+		}
+		
+		
+		
+		/* DEVIS */
+		
+		#section-devis__box {
+			
+			width: 100%;
+		}		
+		
+		.formulaire {
+			
+			width: 100%;
+			
+		}
+		
+		#nom, #email, #telephone, #localisation {
+			
+			width: 60%;
+		}
+		
+		#btnEnvoyer {
+			
+			width: 25%;
+			height: 30px;
+			margin: 10px;
+		}
+		
+		.infomap {
+		
+		width: 80%;
+	}
+		
+		/* FOOTER */
+		
+		.flexsecond {
+			
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+		}
+		
+		
+		
+		.curiculum {
+			
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 5px;
+		}
+		
+		
+		.photoProfil {
+			
+			display: none;
+			
+		}
+		
+		.infoJB {
+		
+		width: 100%;
+		margin-bottom: 15px;
+			
+		}
+		
+		
+		
+		
+		
+	}
+	
+} 
+
