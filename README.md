@@ -1,6 +1,3 @@
-# cours
-cours JS 
-
 # Welcome to my teaching repository ! #
 
 You will find the actual teaching we are working on 
