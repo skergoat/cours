@@ -12,7 +12,7 @@ class Personnage {
     }
 
     // perso introduce himself    
-    welcome() {
+    hello() {
         console.log('hello, je suis un ' + this.type + ' ! Je m\'appelle ' +  this.name + ' Je possede ' + this.life + ' pts de vie et ' + this.experience + ' pts d\'experience.');
     }
 
@@ -47,7 +47,7 @@ class Orc extends Personnage {
             this.experience = this.experience + 10; 
             console.log('Zorg est en colere ! Il obtient 10 points d\'experience supplementaires.');
             // call method in object
-            this.welcome();
+            this.hello();
         }  
         else {
             console.log('vous avez deja utilisé la colère de l\'orc !');
@@ -73,7 +73,7 @@ class Elfe extends Personnage {
             this.life = this.life + 50;
             console.log('Elerond a une potion de guerison. Il obtient 50 points de vie supplementaires.');
             // call method in object
-            this.welcome();
+            this.hello();
         }  
         else {
             console.log('vous avez déjà utilisé le sort de guérison');
@@ -84,10 +84,10 @@ class Elfe extends Personnage {
 
 // calling parent methods  
 let zorg = new Orc('Zorg', 200, 10);
-zorg.welcome();
+zorg.hello();
 
 let elerond = new Elfe('Elerond', 200, 10);
-elerond.welcome();
+elerond.hello();
 
 console.log(zorg.blesser(elerond));
 console.log(elerond.blesser(zorg));
